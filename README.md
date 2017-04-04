@@ -9,4 +9,4 @@ In order to run this program poperly, you must follow the rules described bellow
 
 3.The controller can't recongnize all the switches in the topo right now, so you need to restart it to establish connections.
 # test file 
-I put some test file in the floder. You can use them to get a better understanding of my program. 
+I put some test file in the floder. You can use them to get a better understanding of this program. 
