@@ -14,7 +14,7 @@ In order to run this program properly, you must follow the rules described bello
 
 I run my program under linux with mininet. I use ryu as my controller.
 
-If you don't know how to replace your old OpenVswitch, you can try fresh.sh in the folder.
+If you don't know how to replace your old OpenVswitch, you can try fresh.sh.
 # test file 
 I put some test file in the 'demo' folder. You can use them to get a better understanding of this program. 
 
