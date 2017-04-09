@@ -4,7 +4,7 @@ kill `cd /usr/local/var/run/openvswitch && cat ovsdb-server.pid ovs-vswitchd.pid
 aptitude remove openvswitch-common openvswitch-datapath-dkms openvswitch-controller openvswitch-pki openvswitch-switch -y
 rmmod openvswitch
 #install the new ovs
-cd "your path to voc"/openvswitch-2.5.0_inabnd
+cd "your path to ovs"/openvswitch-2.5.0_inabnd
 ./configure --prefix=/usr --with-linux=/lib/modules/`uname -r`/build
 make
 make install 
