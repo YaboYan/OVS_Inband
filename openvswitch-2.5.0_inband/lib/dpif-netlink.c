@@ -255,8 +255,8 @@ dpif_netlink_modify_ofpbuf(struct dpif_netlink_ofpbuf *request, struct ofpbuf *b
                           request->cmd, OVS_OFBUF_VERSION);///buf is transmitted to the kernel
     ovs_header = ofpbuf_put_uninit(buf, sizeof *ovs_header);
     ovs_header->dp_ifindex = request->dp_ifindex;
-    nl_msg_put_u32(buf, OVS_OFBUFF_ATTR_SRC_IP, src_ip);
-    nl_msg_put_u32(buf, OVS_OFBUFF_ATTR_DST_IP, dst_ip);
+    nl_msg_put_u32(buf, OVS_OFBUFF_ATTR_SRC_IP, htonl(src_ip）);
+    nl_msg_put_u32(buf, OVS_OFBUFF_ATTR_DST_IP, htonl(dst_ip）);
     nl_msg_put_u16(buf, OVS_OFBUFF_ATTR_PORTID, port_id);
     nl_msg_put_unspec(buf,OVS_OFBUFF_ATTR_SRC_EA,&src_ea,ea_len);
     nl_msg_put_unspec(buf,OVS_OFBUFF_ATTR_DST_EA,&dst_ea,ea_len);
