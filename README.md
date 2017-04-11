@@ -6,7 +6,7 @@ In order to run this program properly, you must follow the rules described bello
 
 1.Switch 'S1' is a special switch to this program. If you want to create an in-band topo. this switch must exist and directly connect to the controller. Besides, you have to make sure that you create this switch before others. 
 
-2.After you created your topo. You need to insert flow table manually for control messages to be transmitted. this program allocated one ip address for each switch, you can find these addresses at log files. Switch 'S1' has ip address '124.0.0.10'. 
+2.After you created your topo. You need to insert flow table manually for control messages to be transmitted. this program allocated one ip address for each switch, you can find these addresses at log files. Switch 'S1' has ip address '10.0.0.124'. 
 
 3.When you insert the flow table properly, the controller still can not recognize all the switches. So you need to restart it to establish connections.
 
