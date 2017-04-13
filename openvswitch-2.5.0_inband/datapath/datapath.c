@@ -285,7 +285,7 @@ void ovs_dp_process_packet(struct sk_buff *skb, struct sw_flow_key *key)
 		memset(&upcall, 0, sizeof(upcall));
 		if (key->ipv4.addr.dst==p->ipv4)
 		{
-			if(p->ipv4==167772284)
+			if(p->ipv4==htonl(167772284))
 			   {upcall.cmd =OVS_PACKET_CMD_BACK;
 			if (printk_ratelimit())
 				printk("//cmd_back/////");
