@@ -1,7 +1,7 @@
 # What's this
 Some people who have developed project about software defined network and OpenVSwitchd may find that openflow messages can still be transmitted to the switches after the ports have been shut down. This program solved this problem by sending the openflow messages to kernel space. Switches can automatically extract these packages from all the data running in the network and send them back to userspace where they are going to be handled.
 
-This project is designed to test the data plane in fast failure restoration experiment, which is under SDN in-band control senario. The code of controller is still under preparation。 It won't take long before it goes public.
+This project is designed to test the data plane in fast failure restoration experiment, which is under SDN in-band control senario. The code of controller is still under preparation. It won't take long before it goes public.
 # How to use
 
 In order to run this program properly, you must follow the rules described bellow:
